@@ -1,7 +1,6 @@
 function toggleMenu() {
   document.querySelector('.nav-links').classList.toggle('active');
 }
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -17,4 +16,4 @@ function toggleMenu() {
     "https://www.instagram.com/yourprofile"
   ]
 }
-</script>
+
