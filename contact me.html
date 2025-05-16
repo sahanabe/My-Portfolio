@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    form {
+      background: #fff;
+      padding: 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    form p {
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #333;
+    }
+
+    .contact-info p {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    .contact-info span {
+      color: orange;
+      font-weight: 600;
+    }
+
+    .map-section {
+      padding: 0 20px 60px;
+    }
+
+    .map-section iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px 60px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+    }
+
+    .faq-section h2 {
+      font-size: 2rem;
+    }
+
+    .faq-section details {
+      margin-bottom: 15px;
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+    }
+
+    footer .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      text-align: left;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .contact-wrapper, .faq-section {
+        grid-template-columns: 1fr;
+      }
+
+      .faq-section {
+        gap: 20px;
+      }
+
+      .map-section {
+        padding: 0 20px 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <div class="container">
+      <h1>Get in touch</h1>
+      <div class="contact-wrapper">
+        <form action="https://formspree.io/f/xvgalzla" method="POST">
+          <p>Send a Message</p>
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <select name="interest" required>
+            <option value="">Interested In</option>
+            <option value="service">Service</option>
+            <option value="support">Support</option>
+          </select>
+          <input type="text" name="phone" placeholder="Phone Number" required>
+          <textarea name="message" placeholder="Message" rows="5" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+
+        <div class="contact-info">
+          <p><strong>Call Us</strong><br><span> +81 80 6391 5957</span></p>
+          <p><strong>Visit Us</strong><br><span>新潟県新潟市中央区沼垂東5丁目15-26<br>レオパレス沼垂 103号室</span></p>
+          <p><strong>Live Chat</strong><br><span>Coming Soon</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="map-section">
+    <div class="container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3147.198043014989!2d139.06107848375265!3d37.92580359961685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff4ca1f37c3938b%3A0xd7e9cf3729828677!2z44CSOTUwLTAwNzUgTmlpZ2F0YSwgQ2h1byBXYXJkLCBOdXR0YXJpaGlnYXNoaSwgNS1jaMWNbWXiiJIxNeKIkjI2IOODrOOCquODkeODrOOCue-8ku-8keOBrOOBo-OBn-OCig!5e0!3m2!1sen!2sjp!4v1747372749835!5m2!1sen!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <div class="faq-section">
+    <div>
+      <h2>Frequently asked questions.</h2>
+    </div>
+    <div>
+      <details>
+        <summary>What services do you offer?</summary>
+        <p>I offer web development, UI/UX design, cloud consulting, Japanese language training, and immigration support services for Japan.</p>
+      </details>
+      <details>
+        <summary>How can I contact you for a project?</summary>
+        <p>You can use the contact form at the bottom of this website or email me directly at sahanabeysingheofficial@gmail.com.</p>
+      </details>
+      <details>
+        <summary>Do you build custom websites or use templates?</summary>
+        <p>I build fully custom websites tailored to your brand, but can also customize high-performance templates if you prefer a faster turnaround.</p>
+      </details>
+      <details>
+        <summary>What technologies do you specialize in?</summary>
+        <p>I specialize in HTML, CSS, JavaScript, PHP, Python, Azure Cloud, SQL, and frameworks like React and Flask.</p>
+      </details>
+      <details>
+        <summary>Do you offer Japanese language courses online?</summary>
+        <p>Yes, I provide beginner to advanced Japanese lessons online, including JLPT exam preparation and business communication skills.</p>
+      </details>
+    </div>
+  </div>
+
+  <footer>
+    <p>Join with me Today.<br>Getting More Done Together.</p>
+    <div class="footer-grid">
+      <div><strong>Address</strong><br>新潟県新潟市中央区沼垂東5丁目15-26<br>レオパレス沼垂 103号室</div>
+      <div><strong>Phone Number</strong><br> +81 80 6391 5957</div>
+      <div><strong>Email</strong><br><a href="mailto:sahanabeysingheofficial@gmail.com">sahanabeysingheofficial@gmail.com</a></div>
+      <div><strong>Follow</strong><br>
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">YouTube</a> |
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

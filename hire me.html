@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Me - Sahan Abeysinghe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #002b5c;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #ffd700;
+    }
+
+    .hire-section {
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      display: flex;
+      justify-content: center;
+    }
+    .hire-form-container {
+      background: white;
+      padding: 2rem;
+      max-width: 600px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .hire-form-container h2 {
+      margin-bottom: 1.5rem;
+      color: #002b5c;
+    }
+    .hire-form-container input,
+    .hire-form-container textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .hire-form-container button {
+      background-color: #002b5c;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .hire-form-container button:hover {
+      background-color: #004080;
+    }
+    .success-message {
+      color: green;
+      display: none;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">SAHAN ABEYSINGHE</div>
+    <ul class="nav-links">
+      <li><a href="file:///C:/Users/fn0034/OneDrive%20-%20%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%83%A0%E6%83%85%E5%A0%B1%E3%82%A2%E3%82%AB%E3%83%87%E3%83%9F%E3%83%BC%E5%B0%82%E9%96%80%E5%AD%A6%E6%A0%A1/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/Project%20Niigata/portfolio/My%20Portfolio%20Project/Index.html#">Home</a></li>
+      <li><a href="file:///C:/Users/fn0034/OneDrive%20-%20%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%83%A0%E6%83%85%E5%A0%B1%E3%82%A2%E3%82%AB%E3%83%87%E3%83%9F%E3%83%BC%E5%B0%82%E9%96%80%E5%AD%A6%E6%A0%A1/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/Project%20Niigata/portfolio/My%20Portfolio%20Project/portfolio%20blog.html#">Blog</a></li>
+      <li><a href="file:///C:/Users/fn0034/OneDrive%20-%20%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%83%A0%E6%83%85%E5%A0%B1%E3%82%A2%E3%82%AB%E3%83%87%E3%83%9F%E3%83%BC%E5%B0%82%E9%96%80%E5%AD%A6%E6%A0%A1/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/Project%20Niigata/portfolio/My%20Portfolio%20Project/contact%20me.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hire-section">
+    <div class="hire-form-container">
+      <h2>Hire Me Form</h2>
+      <!-- Formspree Form -->
+      <form action="https://formspree.io/f/myzwokoq" method="POST">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="project" placeholder="Project Title">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
