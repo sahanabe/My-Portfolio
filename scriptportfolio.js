@@ -16,4 +16,8 @@ function toggleMenu() {
     "https://www.instagram.com/yourprofile"
   ]
 }
+window.onscroll = function() {
+  document.querySelector('.scroll-top').style.display = 
+    window.scrollY > 300 ? 'block' : 'none';
+}
 
