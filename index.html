@@ -13,30 +13,49 @@
   <link rel="stylesheet" href="stylemyportfolio.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">SAHAN ABEYSINGHE</div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <i class="fas fa-bars"></i>
-    </div>
-    <ul class="nav-links">
-      <li><a href="contact.html">Know how to contact me?</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="#">What's New <span style="background-color: gold; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; margin-left: 5px;">Premium</span></a></li>
-      <li><a href="#" class="cta">トップへ戻る</a></li>
+  
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="scroll-top">
+  ↑ Top
+</button>
+<div class="hamburger" onclick="toggleMenu()">
+  <i class="fas fa-bars"></i>
+</div>
+
+
+ <nav class="navbar">
+  <div class="logo">SAHAN ABEYSINGHE</div>
+  <ul class="nav-links">
+    <li><a href="contact.html">Know how to contact me?</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li>
+      <a href="#">
+        What's New 
+        <span style="background-color: gold; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; margin-left: 5px;">
+          Premium
+        </span>
+      </a>
+    </li>
+
+      
     </ul>
   </nav>
-
-  <section class="hero-section">
-    <div class="hero-container">
-      <div class="glass-image">
-        <img src="Images/hero-bg.jpg" alt="Traditional Kyoto Street at Night">
-      </div>
-      <div class="hero-content">
-        <h1>あなたの成長を支える<br><span>柔軟に働けるIT・AI・日本語サポートの仕事</span></h1>
-        <a href="hire%20me.html" class="btn">Hire Me Now</a>
-      </div>
+<section class="hero-section">
+  <div class="hero-container">
+    <!-- Left: Glass image card -->
+    <div class="glass-image">
+      <img src="Images/hero-bg.jpg" alt="Kyoto Street">
     </div>
 
+    <!-- Right: Text + CTA -->
+    <div class="hero-content">
+      <h1>あなたの成長を支える<br><span>柔軟に働けるIT・AI・日本語サポートの仕事</span></h1>
+      <a href="hire%20me.html" class="btn" target="_blank">Hire Me Now</a>
+    </div>
+  </div>
+</section>
+
+
+  
 
   <section class="media-section">
     <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
@@ -54,7 +73,6 @@
     <div class="rating">
       ⭐⭐⭐⭐⭐ <span>もっと詳しく：</span>
     </div>
-  </section>
   </section>
   
 <!-- About Section -->
