@@ -76,16 +76,14 @@
       cursor: pointer;
     }
 
-    .hero-section {
-      height: 100vh;
-      background: url('Images/hero-bg.jpg') no-repeat center center/cover;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 80px 20px;
-    }
-
+.hero-section {
+  height: calc(100vh - 80px); /* Subtract approx navbar height */
+  background: url('Images/hero-bg.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
     .hero-section::before {
       content: "";
       position: absolute;
@@ -106,6 +104,9 @@
       flex-wrap: wrap;
     }
 
+.hero-container {
+  padding: 40px 20px; /* moved padding here */
+}
     .glass-image {
       flex: 1;
       max-width: 500px;
@@ -227,6 +228,10 @@
   font-size: 2.5em;
   color: #3b49df;
   transition: 0.3s;
+}
+
+.media-section {
+  margin-top: -30px; /* remove space caused by default margin or padding */
 }
 
 .media-section i:hover {
