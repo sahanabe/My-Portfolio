@@ -1,6 +1,6 @@
-function toggleMenu() {
-  document.querySelector('.nav-links').classList.toggle('active');
-}
+ function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
 {
   "@context": "https://schema.org",
   "@type": "Person",
